@@ -583,3 +583,24 @@ tr, td , th {
   margin-top: 1rem;
   transition: background-color 0.3s ease;
 }
+
+
+
+/* ---------------------------  Widgets page design starts here  ---------------------------  */
+
+.widgets-header {
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+  font-size: larger;
+  color: indianred;
+  font-weight: 600;
+  border: 3px solid #f0f0f0 ;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  background-color: #3e3e3e;
+}
+

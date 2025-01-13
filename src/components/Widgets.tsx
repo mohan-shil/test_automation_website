@@ -47,14 +47,15 @@ const Widgets = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
-      <div className="p-10">
-        <h1 className=" text-5xl">Widgets Playground</h1>
+    <div className="  flex justify-center items-center">
+      <div className="web-container bg-white p-10 rounded-lg shadow-lg">
+        <h1 className=" widgets-header">Widgets Playground</h1>
         <br />
 
         {/* Accordion */}
-        <section>
-          <h2>Accordion</h2>
+        <section className="">
+          <h2 className="text-box-header">Accordion</h2>
+          <hr /><br />
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               Accordion 1
@@ -72,11 +73,12 @@ const Widgets = () => {
         <br />
         {/* Auto Complete */}
         <section>
-          <h2>Auto Complete</h2>
+          <h2 className="text-box-header">Auto Complete</h2>
+          <hr /><br />
           <Autocomplete
             options={["Option 1", "Option 2", "Option 3"]}
             renderInput={(params) => (
-              <TextField {...params} label="Auto Complete" />
+              <TextField {...params} className="auto-label " label="Auto Complete" />
             )}
           />
         </section>
@@ -85,7 +87,8 @@ const Widgets = () => {
 
         {/* Date Picker */}
         <section>
-          <h2>Date Picker</h2>
+          <h2 className="text-box-header"> Date Picker</h2>
+          <hr /><br />
           <TextField
             id="date"
             label="Date Picker"
@@ -101,7 +104,8 @@ const Widgets = () => {
 
         {/* Slider */}
         <section>
-          <h2>Slider</h2>
+          <h2 className="text-box-header">Slider</h2>
+          <hr /><br />
           <Slider
             value={value}
             onChange={handleSliderChange}
@@ -113,7 +117,8 @@ const Widgets = () => {
 
         {/* Progress Bar */}
         <section>
-          <h2>Progress Bar</h2>
+          <h2 className="text-box-header">Progress Bar</h2>
+          <hr /><br />
           <CircularProgress variant="determinate" value={value} />
         </section>
 
@@ -122,7 +127,8 @@ const Widgets = () => {
 
         {/* Tabs */}
         <section>
-          <h2>Tabs</h2>
+          <h2 className="text-box-header">Tabs</h2>
+          <hr /><br />
           <Tabs value={tabValue} onChange={handleTabChange}>
             <Tab label="Tab 1" />
             <Tab label="Tab 2" />
@@ -136,7 +142,8 @@ const Widgets = () => {
         <br />
         {/* Tool Tips */}
         <section>
-          <h2>Tool Tips</h2>
+          <h2 className="text-box-header">Tool Tips</h2>
+          <hr /><br />
           <Tooltip title="Tooltip text">
             <button>Hover over me</button>
           </Tooltip>
@@ -146,7 +153,8 @@ const Widgets = () => {
 
         {/* Menu */}
         <section>
-          <h2>Menu</h2>
+          <h2 className="text-box-header">Menu</h2>
+          <hr /><br />
           <button onClick={handleMenuClick}>Open Menu</button>
           <Menu
             anchorEl={anchorEl}
@@ -164,7 +172,8 @@ const Widgets = () => {
 
         {/* Select Menu */}
         <section>
-          <h2>Select Menu</h2>
+          <h2 className="text-box-header">Select Menu</h2>
+          <hr /><br />
           <FormControl>
             <InputLabel id="select-label">Select Menu</InputLabel>
             <Select
